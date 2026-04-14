@@ -1,7 +1,7 @@
 import React from 'react'
 import heroImage from '../assets/heroImage.png'
 import AnimatedButton from '../assets/common/AnimatedButton'
-import Clutch from '../assets/Clutch-rating.svg'
+import Clutch from '../assets/clutch-rating.svg'
 
 const Hero = () => {
     return (
