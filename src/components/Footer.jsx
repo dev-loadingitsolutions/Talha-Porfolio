@@ -17,16 +17,16 @@ const Footer = () => {
 
                     {/* Center - Navigation Links */}
                     <div className="flex items-center gap-8">
-                        <a href="#home" className="text-[16px] text-white font-[400] hover:underline transition">
+                        <a href="#home" className="hover-menu-underline text-[16px] text-white font-[400]  transition">
                             Home
                         </a>
-                        <a href="#work" className="text-[16px] text-white hover:text-neutral-300 transition">
+                        <a href="#work" className="hover-menu-underline text-[16px] text-white  transition">
                             Work
                         </a>
-                        <a href="#services" className="text-[16px] text-white font-[400] hover:text-neutral-300 transition">
+                        <a href="#services" className=" hover-menu-underline text-[16px] text-white font-[400]  transition">
                             Services
                         </a>
-                        <a href="#why-us" className="text-[16px] text-white font-[400] hover:text-neutral-300 transition">
+                        <a href="#why-us" className="hover-menu-underline text-[16px] text-white font-[400]  transition">
                             Why Us
                         </a>
                     </div>

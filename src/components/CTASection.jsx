@@ -42,9 +42,8 @@ const CTASection = () => {
 
                     {/* Get in Touch Button */}
                     <div>
-                        <button className="cursor-pointer text-[white] text-[16px] flex items-center gap-[20px] px-6 py-3    font-medium  transition-colors duration-200">
-                            Book a call with me
-
+                        <button className=" cursor-pointer text-[white] text-[16px] flex items-center gap-[20px] px-6 py-3    font-medium  transition-colors duration-200">
+                           <span className='hover-menu-underline'>Book a call with me </span> 
                             <div className='circle-yellow'>
                                 <img src={ArrowRight} className="w-4 h-4" alt="Arrow" />
                             </div>

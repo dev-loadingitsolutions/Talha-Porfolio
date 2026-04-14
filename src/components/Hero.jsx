@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section className="py-20  text-white">
             <div className="mt-20 ">
-                <p className="mb-4 text-base text-susi font-medium text-[#0006]">
+                <p className="mb-4 text-[16px] font-[400] text-susi font-medium text-[#0006]">
                     I’m Robin — designer, founder, and growth partner
                 </p>
                 <h1 className="text-black text-susi max-w-[938px] font-bold leading-tight text-4xl sm:text-5xl lg:text-6xl">

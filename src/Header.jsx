@@ -80,10 +80,10 @@ const Header = () => {
             {/* Get in Touch Button */}
             <div>
                 <button
-                    className="cursor-pointer text-button flex items-center gap-[20px] px-6 py-3 font-medium transition-colors duration-200"
+                    className="cursor-pointer  text-button flex items-center gap-[20px] px-6 py-3 font-medium transition-colors duration-200"
                     style={{ color: isOverBlack ? '#fff' : '#000' }}
                 >
-                    Get in touch
+                   <span className='hover-underline'>Get in touch  </span> 
                     <div className='circle-yellow'>
                         <img src={ArrowUpRight} className="w-4 h-4" alt="Arrow" />
                     </div>
