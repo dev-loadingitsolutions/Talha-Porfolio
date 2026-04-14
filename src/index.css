@@ -223,6 +223,13 @@ body {
   transition: 0.7s;
 }
 
+
+
+
+.leading-tight{
+  line-height: 1.25;
+  font-family: 'Suisse Intl semi-bold', sans-serif;
+}
 /* button animation css */
 
 

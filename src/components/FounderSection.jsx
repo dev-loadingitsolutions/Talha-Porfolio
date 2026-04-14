@@ -84,7 +84,7 @@ export default function FounderSection() {
           </p>
 
           {/* Heading */}
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-8">
+          <h2 className="text-[56px] md:text-6xl  font-bold leading-tight mb-8">
             <span className="text-white">Hi, I'm Talha</span>
             <br />
             <span className="text-[#b3b3b3]">Nice to meet you</span>
