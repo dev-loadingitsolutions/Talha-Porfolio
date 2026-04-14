@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import tfLogo from './assets/logo-talha.png'
 import ArrowUpRight from './assets/icons/ArrowUpRight-white.png'
 import tfWhiteLogo from './assets/white-tf-logo.png'
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const [isOverBlack, setIsOverBlack] = useState(false);
@@ -70,11 +71,13 @@ const Header = () => {
         <header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-between p-6 header-div  transition-all duration-300 ease-in-out" style={{ width: '1210px', maxWidth: '1210px' }}>
             {/* Logo */}
             <div className="flex items-center">
+               <button onClick={() => navigate("/")}> 
                 <img
                     src={isOverBlack ? tfWhiteLogo : tfLogo}
                     className="w-12 h-12 transition-opacity duration-300 ease-in-out"
                     alt="TF logo"
                 />
+                </button>
             </div>
 
             {/* Get in Touch Button */}

@@ -284,8 +284,8 @@ export default function CaseStudiesSection() {
               </h2>
             </div>
 
-            <a
-              href="#"
+              <a
+              href="/recent-works"
               className="cs-btn"
               style={{
                 display: "inline-flex", alignItems: "center", gap: 8,

@@ -1,3 +1,5 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import './App.css'
 import Header from './Header'
 import MediaSlider from './assets/common/MediaSlider'
@@ -14,6 +16,14 @@ import CTASection from './components/CTASection'
 import ImagesSection from './components/ImagesSection'
 import CaseStudiesSection from './components/CaseStudiesSection'
 import Footer from './components/Footer'
+import RecentWorks from "./RecentWorks";
+
+
+
+
+
+
+
 
 
 const App = () => {
@@ -58,51 +68,35 @@ const App = () => {
   ]
 
   return (
-    <>
-      <div className="Section pt-24">
-        <Header />
-        {/*  */}
-        <Hero />
-        {/*  */}
-      </div>
-      <MediaSlider slides={demoSlides} />
-      {/*  */}
-      <div className="Section ]">
-        <WhyMe />
-        {/*  */}
-        <ClientsSection />
-        {/*  */}
-
-        <ProcessSection />
-
-        {/*  */}
-      </div>
-        <CaseStudiesSection />
-      <div className="Section">
-        <BuiltByMe />
-        {/*  */}
-
-
-        <PricingSection />
-        {/*  */}
-      </div>
-      {/*  */}
-
-
-
-      <FAQSection />
-      {/*  */}
-
-      <TestimonialsSection />
-      {/*  */}
-
-      {/*  */}
-      <FounderSection />
-
-      <CTASection />
-      {/*  */}
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <div className="Section pt-24">
+              <Header />
+              <Hero />
+            </div>
+            <MediaSlider slides={demoSlides} />
+            <div className="Section">
+              <WhyMe />
+              <ClientsSection />
+              <ProcessSection />
+            </div>
+            <CaseStudiesSection />
+            <div className="Section">
+              <BuiltByMe />
+              <PricingSection />
+            </div>
+            <FAQSection />
+            <TestimonialsSection />
+            <FounderSection />
+            <CTASection />
+            <Footer />
+          </>
+        } />
+        <Route path="/recent-works" element={<RecentWorks />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

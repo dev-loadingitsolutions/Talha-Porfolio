@@ -62,7 +62,7 @@ const FAQSection = () => {
           <div className="space-y-6">
             <div>
               <p className="text-[32px] font-bold  text-black mb-4">Have a question?</p>
-              <h2 className="text-[32px] text-[#b3b3b3]  font-semibold ">
+              <h2 className="text-[32px] text-[#b3b3b3]   font-[500] leading-tight">
                 I’m happy to chat
               </h2>
             </div>
