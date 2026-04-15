@@ -288,4 +288,61 @@ body {
 
 
 
+/* animated text */
+
+.animated-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 40px;
+  border: 2px solid var(--primary);
+  background: black;
+  color: var(--primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 50px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 56px;
+}
+
+.animated-btn__text {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.animated-btn__text--clone {
+  position: absolute;
+}
+
+.animated-btn__text--clone .animated-btn__letter {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.animated-btn__letter {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1),
+              opacity 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animated-btn:hover .animated-btn__text:not(.animated-btn__text--clone) .animated-btn__letter {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.animated-btn:hover .animated-btn__text--clone .animated-btn__letter {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animated-btn:hover {
+  background: black;
+  color: var(--primary-foreground);
+  transition: background 0.4s ease 0.2s, color 0.4s ease 0.2s;
+}
 

@@ -1,17 +1,18 @@
 import React from 'react'
-import heroImage from '../assets/heroImage.png'
-import AnimatedButton from '../assets/common/AnimatedButton'
+import heroImage from '../assets/images/public-services.webp'
+import { AnimatedButton } from '../assets/common/ButtonAnimated'
 import Clutch from '../assets/clutch-rating.svg'
+
 
 const Hero = () => {
     return (
         <section className="py-20  text-white">
             <div className="mt-20 ">
                 <p className="mb-4 text-[16px] font-[400] text-susi font-medium text-[#0006]">
-                    I’m Robin — designer, founder, and growth partner
+                    I’m Talha — founder of LOITS, designer, and growth partner
                 </p>
                 <h1 className="text-black text-susi max-w-[938px] font-bold leading-tight text-4xl sm:text-5xl lg:text-6xl">
-                    I help startups grow revenue through world-class{" "}
+                    Helping startups grow revenue with world-class  {" "}
 
                     <span className="inline-flex items-center  align-middle mx-2">
                         <img
@@ -21,7 +22,7 @@ const Hero = () => {
                         />
                     </span>
 
-                    design
+                    design.
                 </h1>
                 <div className='flex gap-8 items-center mt-10'>
                     <AnimatedButton />
