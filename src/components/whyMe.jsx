@@ -29,23 +29,23 @@ const WhyMe = () => {
         maxWidth: '900px',
         marginBottom: '60px'
       }}>
-        Founder-led product design focused on speed, growth <br />
-        <span style={{ color: '#a1a1a1' }}>and real results.</span>
+        Founder-driven product design built for speed, growth, and <br />
+        <span style={{ color: '#a1a1a1' }}>real, measurable impact.</span>
       </h2>
 
       {/* Stats Grid */}
       <div className="className flex gap-12  justify-start">
         <div className='flex gap-12 flex-col'>
             <Counter target={10} suffix="+" duration={2000} />
-            <p className='text-[#939393] text-[16px] font-[400] '>Years of experience</p>
+            <p className='counter-font-text text-[#939393] text-[16px] font-[400] '>Years of experience</p>
         </div>
         <div className='flex gap-12 flex-col'>
             <Counter target={50} suffix="+" duration={2000} />
-            <p className='text-[#939393] text-[16px] font-[400] '>Finished projects</p>
+            <p className='counter-font-text text-[#939393] text-[16px] font-[400] '>Finished projects</p>
         </div>
         <div className='flex gap-12 flex-col'>
             <Counter target={100} suffix="M" duration={2000} />
-            <p className='text-[#939393] text-[16px] font-[400] '>Users worldwide trust products I’ve designed</p>
+            <p className='counter-font-text text-[#939393] text-[16px] font-[400] '>Users worldwide trust products I’ve designed</p>
         </div>
       </div>
       

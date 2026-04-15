@@ -1,87 +1,100 @@
 import { useEffect, useRef, useState } from "react";
-import Squire from "../assets/icons/squire.svg";
-import reap from "../assets/icons/reap.svg";
-import elumity from "../assets/icons/elumity.svg";
-import Bohemian from "../assets/icons/bohemian-research.svg";
-import Iron from "../assets/icons/iron.svg";
-import Nue from "../assets/icons/nue.svg";
-import Gumroad from "../assets/icons/gumroad.svg";
-import Vannin from "../assets/icons/vannin.svg";
+import Fynder from "../assets/icons/clients-logo/Fynder.png";
+import GtMFound from "../assets/icons/clients-logo/GTM-Fund-Logo.png";
+import tarty from "../assets/icons/clients-logo/7arty.png";
+import Quilverse from "../assets/icons/clients-logo/qualiverse.png";
+import PerchPeek from "../assets/icons/clients-logo/perchpeek.png";
+import QMB from "../assets/icons/clients-logo/qmb.png";
+import RLS from "../assets/icons/clients-logo/rls.png";
+import AlchemyBreath from "../assets/icons/clients-logo/alchemy.png";
+
 
 // Client data with logos and descriptions
-import SquireWhite from "../assets/icons/squire-white-1.svg";
-import reepWhite from "../assets/icons/reap-white-1.svg";
-import elumityWhite from "../assets/icons/elumity-white-1.svg";
-import BohemianWhite from "../assets/icons/boehmian-research-white-1.svg";
+import FynderWhite from "../assets/icons/clients-logo/white-logo/Fynder.png";
+import GtMFoundWhite from "../assets/icons/clients-logo/white-logo/GTM-Fund-Logo.png";
+import tartyWhite from "../assets/icons/clients-logo/white-logo/7arty-white.png";
+import QualiverseWhite from "../assets/icons/clients-logo/white-logo/qualiverse-white.png";
+import PerchPeekWhite from "../assets/icons/clients-logo/white-logo/perchpeek-white.png";
+import QMBWhite from "../assets/icons/clients-logo/white-logo/qbm-white.png";
+import RlSwhite from "../assets/icons/clients-logo/white-logo/rls-white.png";
+import AoBWhite from "../assets/icons/clients-logo/white-logo/AOB-Gold-White.png";
+
 
 
 const clients = [
   {
     id: 1,
-    name: <img className="font-[14px]" src={SquireWhite} alt="SquireWhite Logo" />,
+    name: <img className="font-[12px] w-[60%]" src={FynderWhite} alt="FynderWhite Logo" />,
     logo: (
-      <img className="font-[14px]" src={Squire} alt="Squire Logo" />
+      <img className="font-[12px] h-16 w-[100%]" src={Fynder} alt="Fynder Logo" />
       
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
   },
   {
     id: 2,
-    name: <img className="font-[14px]" src={reepWhite} alt="ReapWhite Logo" />,
+    name: <img className="font-[14px] w-[60%]" src={GtMFoundWhite} alt="GtM Logo" />,
     logo: (
-      <img className="font-[14px]" src={reap} alt="Reap Logo" />
+      <img className="font-[12px] h-10 w-[60%]" src={GtMFound} alt="Gtm-Found Logo" />
+      
     ),
-    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally..",
+    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
   },
   {
     id: 3,
-    name: <img className="font-[14px]" src={elumityWhite} alt="elumityWhite Logo" />,
+    name: <img className="font-[14px] w-[60%]" src={tartyWhite} alt="GtM Logo" />,
     logo: (
-      <img className="font-[14px]" src={elumity} alt="Elumity Logo" />
+      <img className="font-[12px] h-12 w-[80%]" src={tarty} alt="7arty Logo" />
+      
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
   },
   {
     id: 4,
-    name: <img className="font-[14px]" src={BohemianWhite} alt="BohemianWhite
-     Logo" />,
+    name: <img className="font-[14px] w-[60%]" src={QualiverseWhite} alt="GtM Logo" />,
     logo: (
-      <img className="font-[14px]" src={Bohemian} alt="Bohemian Research Logo" />
+      <img className="font-[12px] h-12 w-[80%]" src={Quilverse} alt="7arty Logo" />
+      
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
   },
   {
     id: 5,
-    name: <img className="font-[14px]" src={SquireWhite} alt="SquireWhite Logo" />,
+    name: <img className="font-[14px] w-[60%]" src={PerchPeekWhite} alt="GtM Logo" />,
     logo: (
-      <img className="font-[14px]" src={Iron} alt="Iron  Logo" />
+      <img className="font-[12px] h-12 w-[80%]" src={PerchPeek} alt="7arty Logo" />
+      
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
   },
   {
     id: 6,
-    name: <img className="font-[14px]" src={SquireWhite} alt="SquireWhite Logo" />,
+    name: <img className="font-[14px] w-[60%]" src={QMBWhite} alt="GtM Logo" />,
     logo: (
-      <img className="font-[14px]" src={Nue} alt="Nue Logo" />
+      <img className="font-[12px] h-12 w-[80%]" src={QMB} alt="7arty Logo" />
+      
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
   },
   {
     id: 7,
-    name: <img className="font-[14px]" src={SquireWhite} alt="SquireWhite Logo" />,
+    name: <img className="font-[14px] w-[60%]" src={RlSwhite} alt="GtM Logo" />,
     logo: (
-      <img className="font-[14px]" src={Gumroad} alt="Gumroad Logo" />
+      <img className="font-[12px] h-12 w-[80%]" src={RLS} alt="7arty Logo" />
+      
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
   },
   {
     id: 8,
-    name: <img className="font-[14px]" src={SquireWhite} alt="SquireWhite Logo" />,
+    name: <img className="font-[14px] w-[60%]" src={AoBWhite} alt="GtM Logo" />,
     logo: (
-      <img className="font-[14px]" src={Vannin} alt="Vannin Logo" />
+      <img className="font-[12px] h-12 w-[80%]" src={AlchemyBreath} alt="7arty Logo" />
+      
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
   },
+  
 ];
 
 function ClientCard({ client, index }) {

@@ -26,7 +26,9 @@ const Hero = () => {
                 </h1>
                 <div className='flex gap-8 items-center mt-10'>
                     <AnimatedButton />
-                    <img src={Clutch} alt="Clutch" />
+                    <a href="http://clutch.co/profile/loits-ui-ux-design-saas-enterprise-web-mobile-apps" target="_blank" rel="noopener noreferrer">
+                        <img src={Clutch} alt="Clutch" />
+                    </a>
                 </div>
 
 

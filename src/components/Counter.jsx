@@ -47,7 +47,7 @@ const Counter = ({ target, suffix = '', duration = 2000 }) => {
   }, [isVisible, target, duration])
 
   return (
-    <h2 ref={ref} className="text-[96px] font-[200]">
+    <h2 ref={ref} className="count-text text-[96px] font-Suisse font-[200]">
       {count}
       {suffix}
     </h2>
