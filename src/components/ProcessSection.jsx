@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "Discovery & Strategy",
     description:
-      "We dive into your goals, audience, and market to uncover real opportunities. In a matter of days we'll validate your ideas, map user journeys, and outline an MVP that's worth building.",
+      " We analyze your business goals, target audience, and market landscape to identify real growth opportunities. Through rapid validation, competitor research, and user journey mapping, we define a clear MVP strategy built for success.",
     icon: (
       <svg width="200" height="200" viewBox="0 0 220 220" fill="none">
         <circle cx="110" cy="110" r="80" stroke="#d0d0d0" strokeWidth="1" />
@@ -31,9 +31,9 @@ const steps = [
   },
   {
     number: "02",
-    title: "Design & Prototyping",
+    title: "UX/UI Design & Prototyping",
     description:
-      "From UX flows to pixel-perfect UI, I turn your ideas into an interactive product. Expect high-fidelity prototypes, intuitive layouts, and micro-interactions that elevate the experience.",
+      "We transform your ideas into high-performing digital experiences. From user experience (UX) flows to pixel-perfect user interface (UI) design, we create interactive prototypes that are intuitive, engaging, and conversion-focused.",
     icon: (
       <svg width="200" height="200" viewBox="0 0 220 220" fill="none">
         <rect x="55" y="45" width="125" height="125" stroke="#d0d0d0" strokeWidth="1" fill="none" />
@@ -46,9 +46,9 @@ const steps = [
   },
   {
     number: "03",
-    title: "Testing & Validation",
+    title: "Testing, Optimization & Validation",
     description:
-      "Before launch, we stress-test the product with users, refine what matters most, and ensure your design decisions are backed by data — not guesses.",
+      "Before launch, we rigorously test your product with real users to ensure performance and usability. Using data-driven insights, we refine the experience, optimize key interactions, and deliver a product ready for scalable growth.",
     icon: (
       <svg width="200" height="200" viewBox="0 0 220 220" fill="none">
         <circle cx="110" cy="110" r="85" stroke="#d0d0d0" strokeWidth="1" fill="none" />
@@ -138,7 +138,7 @@ function StepCard({ step, index, total }) {
       <h3 className="text-[24px] font-semibold text-gray-900 mb-3">{step.title}</h3>
 
       {/* Description */}
-      <p className="text-[16px] text-gray-400 leading-relaxed max-w-[280px]">
+      <p className="text-[16px] text-gray-400 leading-relaxed max-w-[290px]">
         {step.description}
       </p>
     </div>
@@ -164,10 +164,10 @@ export default function ProcessSection() {
           P R O C E S S
         </p>
         <h2 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-          From idea to launch
+          From Idea to Launch
         </h2>
         <p className="text-5xl md:text-6xl font-bold text-[#b3b3b3] mt-1">
-          I got you covered
+          End-to-End Product Design
         </p>
       </div>
 

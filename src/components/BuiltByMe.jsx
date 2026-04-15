@@ -6,7 +6,7 @@ const row2 = ["Booking", "E-commerce", "SaaS", "EdTech", "Healthcare", "E-commer
 const highlightRow1 = ["Booking", "Trading"];
 const highlightRow2 = ["E-commerce", "Healthcare"];
 
-function MarqueeRow({ tags, highlights = [], reverse = false, speed = 20 }) {
+function MarqueeRow({ tags, highlights = [], reverse = false, speed = 20  }) {
   const doubled = [...tags, ...tags];
   return (
     <div style={{ overflow: "hidden", width: "100%" }}>
@@ -14,7 +14,7 @@ function MarqueeRow({ tags, highlights = [], reverse = false, speed = 20 }) {
         style={{
           display: "flex",
           gap: 8,
-          animation: `${reverse ? "marqueeRev" : "marquee"} ${speed}s linear infinite`,
+          animation: `${reverse ? "marqueeRev" : "marquee"} ${5}s linear infinite`,
           whiteSpace: "nowrap",
           willChange: "transform",
         }}
