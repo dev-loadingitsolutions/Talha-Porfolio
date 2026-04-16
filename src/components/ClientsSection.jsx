@@ -170,7 +170,7 @@ function ClientCard({ client, index }) {
 
 export default function ClientsSection() {
   return (
-    <section style={{ padding: "3rem 0rem", margin: "0 auto" }}>
+    <section style={{ padding: "180px 0rem 180px", margin: "0 auto" }}>
       <p
         style={{
           fontSize: 12,
