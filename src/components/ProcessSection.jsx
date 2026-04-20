@@ -149,11 +149,11 @@ export default function ProcessSection() {
   const [headingRef, headingInView] = useInView(0.1);
 
   return (
-    <section className=" m-auto   py-48 ">
+    <section className=" m-auto ProcessMobile  py-48 ">
       {/* Heading */}
       <div
         ref={headingRef}
-        className="text-center  mb-20"
+        className="text-center HeadMarg mb-20"
         style={{
           opacity: headingInView ? 1 : 0,
           transform: headingInView ? "translateY(0px)" : "translateY(20px)",
@@ -163,16 +163,16 @@ export default function ProcessSection() {
         <p className="text-[14px] tracking-[0.3em] text-black uppercase mb-6">
           P R O C E S S
         </p>
-        <h2 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+        <h2 className="TextHead text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
           From Idea to Launch
         </h2>
-        <p className="text-5xl md:text-6xl font-bold text-[#b3b3b3] mt-1">
+        <p className="TextHead text-5xl md:text-6xl font-bold text-[#b3b3b3] mt-1">
           End-to-End Product Design
         </p>
       </div>
 
       {/* Steps */}
-      <div className=" mx-auto grid  grid-cols-1 md:grid-cols-3 gap-16 md:gap-4 relative">
+      <div className="ProcessGap mx-auto grid  grid-cols-1 md:grid-cols-3 gap-16 md:gap-4 relative">
         {steps.map((step, i) => (
           <StepCard
             key={step.number}

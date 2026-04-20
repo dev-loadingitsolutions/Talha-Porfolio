@@ -264,7 +264,7 @@ export default function TestimonialsSection() {
         .tc-navbtn:disabled { cursor: default !important; }
       `}</style>
 
-      <section className=""
+      <section className="TestimonialMobile"
         style={{
           background: "#f2f2f2",
           padding: "160px 56px 120px",
@@ -273,20 +273,20 @@ export default function TestimonialsSection() {
         }}
       >
         {/* ── Header ── */}
-        <div className="Section" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 52 }}>
+        <div className="Section SectionMobile" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 52 }}>
           <div>
-            <div style={{ fontSize: 14, letterSpacing: "0.8em", color: "#080808", textTransform: "uppercase", marginBottom: 14, fontWeight: 500 }}>
+            <div className="headMobile" style={{ fontSize: 14, letterSpacing: "0.8em", color: "#080808", textTransform: "uppercase", marginBottom: 14, fontWeight: 500 }}>
               Testimonials
             </div>
-            <div style={{ fontSize: 56, fontWeight: 700, color: "#111", lineHeight: 1.08, marginBottom: 2 }}>
+            <div className="HeadText" style={{ fontSize: 56, fontWeight: 700, color: "#111", lineHeight: 1.08, marginBottom: 2 }}>
               A reliable partner for
             </div>
-            <div style={{ fontSize: 56, fontWeight: 700, color: "#b3b3b3", lineHeight: 1.2 }}>
+            <div className="HeadText" style={{ fontSize: 56, fontWeight: 700, color: "#b3b3b3", lineHeight: 1.2 }}>
               wideworld-class quality and<br />on-time delivery
             </div>
           </div>
 
-          <div style={{ display: "flex", gap: 10, paddingTop: 8 }}>
+          <div className="ButtonDc" style={{ display: "flex", gap: 10, paddingTop: 8 }}>
             {[
               { dir: -1, d: "M15.8335 9.99968L4.16683 9.99968M4.16683 9.99968L10.0002 15.833M4.16683 9.99968L10.0002 4.16634" },
               { dir: 1, d: "M4.1665 10.0003H15.8332M15.8332 10.0003L9.99984 4.16699M15.8332 10.0003L9.99984 15.8337" },

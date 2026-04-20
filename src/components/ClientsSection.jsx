@@ -108,7 +108,7 @@ function ClientCard({ client, index }) {
   }, [index]);
 
   return (
-    <div
+    <div className="MobileHeight"
       ref={ref}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -142,7 +142,7 @@ function ClientCard({ client, index }) {
       </div>
 
       {/* Hover info */}
-      <div
+      <div className="hoverInfo"
         style={{
           position: "absolute",
           inset: 0,
@@ -157,10 +157,10 @@ function ClientCard({ client, index }) {
           pointerEvents: "none",
         }}
       >
-        <p style={{ fontSize: 13, fontWeight: 600, color: "#fff", margin: "0 0 6px 0", letterSpacing: "0.02em" }}>
+        <p className="logoName" style={{ fontSize: 13, fontWeight: 600, color: "#fff", margin: "0 0 6px 0", letterSpacing: "0.02em" }}>
           {client.name}
         </p>
-        <p style={{ fontSize: 14, fontFamily: "Suisse Intl Book, Arial, sans-serif", fontWeight: 400, color: "#fffc", lineHeight: 1.6, margin: 0 }}>
+        <p className="describeText" style={{ fontSize: 14, fontFamily: "Suisse Intl normal , sans-serif", fontWeight: 400, color: "#fffc", lineHeight: 1.6, margin: 0 }}>
           {client.description}
         </p>
       </div>
@@ -170,7 +170,7 @@ function ClientCard({ client, index }) {
 
 export default function ClientsSection() {
   return (
-    <section style={{ padding: "180px 0rem 180px", margin: "0 auto" }}>
+    <section className="ClientMobile" style={{ padding: "180px 0rem 180px", margin: "0 auto" }}>
       <p
         style={{
           fontSize: 12,
@@ -184,7 +184,7 @@ export default function ClientsSection() {
         C L I E N T S
       </p>
 
-      <div className="flex gap-4"
+      <div className="clientBrand flex gap-4"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(4, 1fr)",

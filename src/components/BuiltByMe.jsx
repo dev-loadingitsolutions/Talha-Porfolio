@@ -238,7 +238,7 @@ const WhyMe = () => {
         }
       `}</style>
 
-      <section style={{
+      <section className='BuiltMobile' style={{
         backgroundColor: '#fff',
         padding: '200px 0px',
         fontFamily: 'Inter, sans-serif',
@@ -257,7 +257,7 @@ const WhyMe = () => {
         </p>
 
         {/* ── Main Large Heading ── */}
-        <h2 style={{
+        <h2 className='headText' style={{
           fontSize: 'clamp(32px, 5vw, 56px)',
           lineHeight: '1.1',
           fontWeight: '600',
@@ -271,7 +271,7 @@ const WhyMe = () => {
         
 
         {/* ── Row 1: 70% / 30% ── */}
-        <div style={{
+        <div className='GridMobile' style={{
           display: 'grid',
           gridTemplateColumns: '70% 30%',
           gap: 20,
@@ -289,7 +289,8 @@ const WhyMe = () => {
             position: 'relative',
           }}>
             <h3 style={{
-              fontSize: 28, fontWeight: 500, color: '#111',
+              fontSize: 28
+               , fontWeight: 500, color: '#111',
               margin: '0 0 28px', paddingLeft: 32, lineHeight: 1.4,
             }}>
               Cross-industry experience<br />in product design
@@ -306,7 +307,7 @@ const WhyMe = () => {
         </div>
 
         {/* ── Row 2: 30% / 70% ── */}
-        <div style={{
+        <div className='GridMobile' style={{
           display: 'grid',
           gridTemplateColumns: '30% 70%',
           gap: 20,

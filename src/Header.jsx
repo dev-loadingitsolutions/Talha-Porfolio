@@ -68,7 +68,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-between p-6 header-div  transition-all duration-300 ease-in-out" style={{ width: '1210px', maxWidth: '1210px' }}>
+        <header className="fixed header-mobile top-0 left-1/2 transform -translate-x-1/2 z-50 flex items-center justify-between p-6 header-div  transition-all duration-300 ease-in-out" style={{ width: '100%', maxWidth: '1210px' }}>
             {/* Logo */}
             <div className="flex items-center">
                <button onClick={() => navigate("/")}> 
@@ -81,7 +81,7 @@ const Header = () => {
             </div>
 
             {/* Get in Touch Button */}
-            <div>
+            <div className='buttonGet'>
                 <button
                     className="cursor-pointer  text-button flex items-center gap-[20px] px-6 py-3 font-medium transition-colors duration-200"
                     style={{ color: isOverBlack ? '#fff' : '#000' }}

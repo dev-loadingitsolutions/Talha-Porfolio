@@ -128,7 +128,7 @@ export default function PricingSection() {
   const plan = isFixed ? planData.fixed : planData.monthly;
 
   return (
-    <section
+    <section className="PricingMobile"
       style={{
         background: "#fff",
         padding: "160px px 80px",
@@ -137,7 +137,7 @@ export default function PricingSection() {
       }}
     >
       {/* ── Header ── */}
-      <div style={{ marginBottom: 56 }}>
+      <div className="HeadText" style={{ marginBottom: 56 }}>
         <p
           style={{
             fontSize: 14,
@@ -150,7 +150,7 @@ export default function PricingSection() {
         >
           Pricing
         </p>
-        <h2
+        <h2 className="PricingHead"
           style={{
             fontSize: 56,
             fontWeight: 700,
@@ -161,7 +161,7 @@ export default function PricingSection() {
         >
           Transparent pricing
         </h2>
-        <h2
+        <h2 className="PricingHead"
           style={{
             fontSize: 56,
             fontWeight: 700,
@@ -175,7 +175,7 @@ export default function PricingSection() {
       </div>
 
       {/* ── Cards Row ── */}
-      <div
+      <div className="cardMobilePrice"
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 0.65fr",
@@ -184,7 +184,7 @@ export default function PricingSection() {
         }}
       >
         {/* ── Left: Ongoing Subscription (dark) ── */}
-        <div
+        <div className="OngoingPadd"
           style={{
             background: "#111",
             
@@ -195,7 +195,7 @@ export default function PricingSection() {
           }}
         >
           {/* Card header */}
-          <div
+          <div className="cardHeadDir"
             style={{
               display: "flex",
               justifyContent: "space-between",
@@ -395,7 +395,7 @@ export default function PricingSection() {
       </div>
 
       {/* ── Bottom info cards ── */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+      <div className="BottomCards" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
         {[
           {
             title: "Try me for two weeks",

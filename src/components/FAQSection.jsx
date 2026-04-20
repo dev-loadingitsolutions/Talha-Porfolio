@@ -56,9 +56,9 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-white text-black py-20">
-      <div className="max-w-[1210px] mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1.9fr] gap-12 items-start">
+    <section  className="bg-white faqMobile text-black py-20">
+      <div className="max-w-[1210px] innerFaq mx-auto px-6">
+        <div className="GapMobile grid grid-cols-1 lg:grid-cols-[1.1fr_1.9fr] gap-12 items-start">
           <div className="space-y-6">
             <div>
               <p className="text-[32px] font-bold  text-black mb-4">Have a question?</p>
@@ -70,7 +70,7 @@ const FAQSection = () => {
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={faq.question} className="border-b border-neutral-200">
+              <div key={faq.question} className=" border-b border-neutral-200">
                 <button
                   type="button"
                   className="w-full py-4 flex items-center justify-between text-left"

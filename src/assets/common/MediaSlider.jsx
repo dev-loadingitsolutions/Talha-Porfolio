@@ -1,8 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, FreeMode } from 'swiper/modules'
-
-// Import Swiper styles
 import 'swiper/css'
 
 const defaultSlides = [
@@ -14,22 +12,21 @@ const defaultSlides = [
 
 const MediaSlider = ({ slides = defaultSlides }) => {
   return (
-    <div 
-      className="slider-container" 
-      style={{ 
-        width: '100%', 
-        padding: '20px 0', 
+    <div
+      style={{
+        margintop: '40px',
+        width: '100%',
+        padding: '20px 0',
         position: 'relative'
       }}
     >
       <Swiper
         modules={[Autoplay, FreeMode]}
-        slidesPerView={3}
         spaceBetween={20}
         loop={true}
         freeMode={true}
         grabCursor={true}
-        speed={8000} 
+        speed={8000}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
@@ -37,15 +34,18 @@ const MediaSlider = ({ slides = defaultSlides }) => {
         }}
         allowTouchMove={true}
         className="smooth-marquee"
+        breakpoints={{
+          0: {
+            slidesPerView: 1.5,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {slides.map((item, index) => (
           <SwiperSlide key={index}>
-            <div style={{ 
-              height: '500px', 
-              overflow: 'hidden', 
-              background: '#1a1a1a',
-              borderRadius: '' // Thoda rounded corner for better UI
-            }}>
+            <div className="slide-media-wrapper">
               {item.type === 'video' ? (
                 <video
                   src={item.url}
@@ -72,9 +72,22 @@ const MediaSlider = ({ slides = defaultSlides }) => {
           transition-timing-function: linear !important;
           -webkit-transition-timing-function: linear !important;
         }
+
+        .slide-media-wrapper {
+          height: 500px;
+          overflow: hidden;
+          background: #1a1a1a;
+          border-radius: 8px;
+        }
+
+        @media (max-width: 767px) {
+          .slide-media-wrapper {
+            height: 260px;
+          }
+        }
       `}</style>
     </div>
-  );
-};
+  )
+}
 
-export default MediaSlider;
+export default MediaSlider

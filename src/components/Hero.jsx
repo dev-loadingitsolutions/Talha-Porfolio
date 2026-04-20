@@ -6,15 +6,15 @@ import Clutch from '../assets/clutch-rating.svg'
 
 const Hero = () => {
     return (
-        <section className="py-20  text-white">
-            <div className="mt-20 ">
+        <section className="py-20 HeroSection text-white">
+            <div className="mt-20 HeroInner">
                 <p className="mb-4 text-[16px] font-[400] text-susi font-medium text-[#0006]">
                     I’m Talha — founder of LOITS, designer, and growth partner
                 </p>
                 <h1 className="text-black text-susi max-w-[938px] font-bold leading-tight text-4xl sm:text-5xl lg:text-6xl">
                     Helping startups grow revenue with world-class  {" "}
 
-                    <span className="inline-flex items-center  align-middle mx-2">
+                    <span className="inline-flex items-center middleImage align-middle mx-2">
                         <img
                             src={heroImage}
                             alt="Hero"

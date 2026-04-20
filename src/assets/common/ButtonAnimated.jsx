@@ -1,6 +1,6 @@
 import React from "react";
 
-const text = "Show Recent Work";
+const text = "Show recent work";
 
 export function AnimatedButton() {
   return (

@@ -4,10 +4,10 @@ import Counter from './Counter'
 const WhyMe = () => {
 
   return (
-    <section style={{ 
+    <section className='WhyMeMobile' style={{ 
       backgroundColor: '#fff', 
       padding: '200px 0px', 
-      fontFamily: 'Inter, sans-serif',
+      fontFamily: ' Inter, sans-serif',
       color: '#000' 
     }}>
       {/* Small Top Heading */}
@@ -35,15 +35,15 @@ const WhyMe = () => {
 
       {/* Stats Grid */}
       <div className="className flex gap-12  justify-start">
-        <div className='flex gap-12 flex-col'>
+        <div className='SectionCount flex gap-12 flex-col'>
             <Counter target={10} suffix="+" duration={2000} />
             <p className='counter-font-text text-[#939393] text-[16px] font-[400] '>Years of experience</p>
         </div>
-        <div className='flex gap-12 flex-col'>
+        <div className='SectionCount flex gap-12 flex-col'>
             <Counter target={50} suffix="+" duration={2000} />
             <p className='counter-font-text text-[#939393] text-[16px] font-[400] '>Finished projects</p>
         </div>
-        <div className='flex gap-12 flex-col'>
+        <div className='SectionCount flex gap-12 flex-col'>
             <Counter target={100} suffix="M" duration={2000} />
             <p className='counter-font-text text-[#939393] text-[16px] font-[400] '>Users worldwide trust products I’ve designed</p>
         </div>

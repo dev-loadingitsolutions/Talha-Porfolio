@@ -13,7 +13,7 @@ const ImagesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="ImageMobile py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {images.map((image, index) => (

@@ -73,7 +73,7 @@ function CaseCard({ item, sectionHovered }) {
     <div style={{ display: "flex", flexDirection: "column" }}>
 
       {/* ── Image card ── */}
-      <div
+      <div className="CardPer"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
@@ -260,8 +260,8 @@ export default function CaseStudiesSection() {
         .cs-wrap.dark .cs-btn:hover svg path { stroke: #fff;  }
       `}</style>
 
-      <section
-        className={`cs-wrap${sectionHovered ? " dark" : ""}`}
+      <section 
+        className={`CaseMobile cs-wrap${sectionHovered ? " dark" : ""}`}
         onMouseEnter={() => setSectionHovered(true)}
         onMouseLeave={() => setSectionHovered(false)}
         style={{
@@ -286,7 +286,7 @@ export default function CaseStudiesSection() {
 
               <a
               href="/recent-works"
-              className="cs-btn"
+              className="cs-btn seeButton"
               style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
                 padding: "12px 22px", borderRadius: 40,
@@ -301,7 +301,7 @@ export default function CaseStudiesSection() {
           </div>
 
           {/* ── 2-col staggered grid ── */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0 28px", alignItems: "start" }}>
+          <div className="gridCard" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0 28px", alignItems: "start" }}>
 
             {/* Col 1 */}
             <div style={{ display: "flex", flexDirection: "column", gap: 52 }}>
