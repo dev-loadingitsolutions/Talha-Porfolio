@@ -4,7 +4,7 @@ import Counter from './Counter'
 const WhyMe = () => {
 
   return (
-    <section className='WhyMeMobile' style={{ 
+    <section id='why-us' className='WhyMeMobile' style={{ 
       backgroundColor: '#fff', 
       padding: '200px 0px', 
       fontFamily: ' Inter, sans-serif',

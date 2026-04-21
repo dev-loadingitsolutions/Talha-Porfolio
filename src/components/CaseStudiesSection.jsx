@@ -269,7 +269,7 @@ export default function CaseStudiesSection() {
           fontFamily: "'Inter','Helvetica Neue',sans-serif",
         }}
       >
-        <div className="max-w-[1210px] m-auto">
+        <div className="max-w-[1210px] m-auto" id="work">
           {/* ── Header ── */}
           <div className="" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 56 }}>
             <div>

@@ -52,7 +52,7 @@ const CTASection = () => {
                 </div>
 
                 <div
-                    className={`absolute left-1/2 top-[50px] ml-32 rounded-tr-3xl rounded-tl-3xl rounded-br-3xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white transition-all duration-300 ${showNotification ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-3'
+                    className={`hoverText absolute left-1/2 top-[50px] ml-32 rounded-tr-3xl rounded-tl-3xl rounded-br-3xl border border-white/10 bg-white/10 px-4 py-3 text-sm text-white transition-all duration-300 ${showNotification ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-3'
                         }`}
                     style={{ transform: 'translateX(-50%)' }}
                 >
@@ -61,18 +61,18 @@ const CTASection = () => {
             </div>
             <div className="  px-6 py-16 flex justify-center relative">
                 <div className="w-full ">
-                    <div className="grid grid-cols-2 gap-[570px] justify-items-center">
+                    <div className="imageSection grid grid-cols-2 gap-[570px] justify-items-center">
                         {/* Row 1 */}
                         <div className="w-full max-w-sm aspect-[4/3] overflow-hidden rounded-lg">
                             <img
-                                src="https://framerusercontent.com/images/YFEug273GEkHZyNCjYQ7T98qhzQ.png"
+                                src="https://cdn.dribbble.com/userupload/46322857/file/4b87f553bb713d1775886a9a598425c9.png?resize=1905x1063&vertical=center"
                                 alt="Work sample 1"
                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             />
                         </div>
                         <div className="w-full max-w-sm aspect-[4/3] overflow-hidden rounded-lg">
                             <img
-                                src="https://framerusercontent.com/images/UnIJrd9Y024wX63FjpaYUSQaq8.png"
+                                src="https://cdn.dribbble.com/userupload/46242560/file/be63b6a349ddd45484e93cff7ecb9daa.png?resize=1600x1195&vertical=center"
                                 alt="Work sample 2"
                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             />
@@ -81,14 +81,14 @@ const CTASection = () => {
                         {/* Row 2 */}
                         <div className="w-full max-w-sm aspect-[4/3] overflow-hidden rounded-lg">
                             <img
-                                src="https://framerusercontent.com/images/YFEug273GEkHZyNCjYQ7T98qhzQ.png"
+                                src="https://cdn.dribbble.com/userupload/46062884/file/0bc9a5314a6bb8361b355f8c5b4950c4.png?resize=1905x1131&vertical=center"
                                 alt="Work sample 3"
                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             />
                         </div>
                         <div className="w-full max-w-sm aspect-[4/3] overflow-hidden rounded-lg">
                             <img
-                                src="https://framerusercontent.com/images/UnIJrd9Y024wX63FjpaYUSQaq8.png"
+                                src="https://cdn.dribbble.com/userupload/46044485/file/2d6d72a8ed8aaffd1c4534f0da3ff7f1.png?resize=1600x1244&vertical=center"
                                 alt="Work sample 4"
                                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                             />
@@ -96,7 +96,7 @@ const CTASection = () => {
 
                         <div className="w-full max-w-sm aspect-[4/3] overflow-hidden rounded-lg">
                                 <img
-                                    src="https://framerusercontent.com/images/YFEug273GEkHZyNCjYQ7T98qhzQ.png"
+                                    src="https://cdn.dribbble.com/userupload/44044558/file/original-7193447fbf98db6e7332fba05b76c9b5.png?resize=1600x1077&vertical=center"
                                     alt="Work sample 5"
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                                 />

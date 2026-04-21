@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 @import "tailwindcss";
 :root {
   --primary-blue: #2563eb;
@@ -437,5 +439,21 @@ body {
 }
 .ImageMobile{
    gap: 30px !important;
+}
+.imageSection{
+  width: 100%;
+  column-gap: 50px;
+    row-gap: 200px;
+    padding-bottom: 190px;
+}
+.hoverText{
+  margin-left: 50px;
+  z-index: 10;
+  margin-top: -25px !important;
+
+}
+.footerView{
+  flex-direction: column !important;
+  gap: 40px !important;
 }
 }

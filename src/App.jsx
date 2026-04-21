@@ -15,6 +15,7 @@ import FAQSection from './components/FAQSection'
 import CTASection from './components/CTASection'
 import ImagesSection from './components/ImagesSection'
 import CaseStudiesSection from './components/CaseStudiesSection'
+import ServiceItem from './components/Services'
 import Footer from './components/Footer'
 import RecentWorks from "./RecentWorks";
 
@@ -98,6 +99,7 @@ const App = () => {
 
             </div>
             <CaseStudiesSection />
+            <ServiceItem/>
             <div className="Section">
               <BuiltByMe />
 

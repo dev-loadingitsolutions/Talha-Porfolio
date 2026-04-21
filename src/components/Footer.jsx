@@ -1,18 +1,36 @@
 import React from 'react';
 import tfWhiteLogo from '../assets/white-tf-logo.png';
 import GetInTouch from '../assets/get-in-touch.png';
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
     return (
         <footer className="bg-[#000] text-white pt-8 border-t border-white/10">
             <div className="max-w-[1210px] mx-auto px-6">
-                <div className="flex items-center justify-between">
+                <div className="footerView flex items-center justify-between">
                     {/* Left - Logo and Copyright */}
                     <div className="flex items-center gap-3">
-                        <div className="w-14 h-14 rounded-full border-2 border-white flex items-center justify-center">
+                        <div className="w-14 h-14  border-white flex items-center justify-center">
                             <img src={tfWhiteLogo} alt="TF Logo" />
                         </div>
-                        <span className="text-[14px] text-white">All rights reserved.</span>
+                        <p>
+                            {isMobile
+                                ? "tf.design "
+                                : "All rights reserved."}
+                        </p>
                     </div>
 
                     {/* Center - Navigation Links */}
@@ -119,7 +137,7 @@ const Footer = () => {
                     <img src={GetInTouch} alt="" />
                 </div>
             </div>
-            
+
         </footer>
     );
 };
