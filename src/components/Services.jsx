@@ -65,7 +65,7 @@ function ServiceItem({ service, index, inView }) {
       <div 
         className="relative inline-block cursor-pointer px-4 py-2 -mx-4 group-hover:-mx-3 group-hover:px-3 rounded-lg transition-all duration-300 group-hover:bg-[#FF6F00]"
       >
-        <h2 className="text-6xl md:text-7xl font-black text-white group-hover:text-white transition-colors duration-300 leading-none">
+        <h2 className="serviceTitle text-[88px] md:text-7xl font-black text-white group-hover:text-white transition-colors duration-300 leading-none">
           {service.title}
         </h2>
         
@@ -89,13 +89,13 @@ export default function Services() {
   const [listRef, listInView] = useInView(0.15);
 
   return (
-    <section className="min-h-screen bg-black py-24 md:py-32 flex flex-col items-start justify-start font-inter text-white" id="services">
+    <section className="min-h-screen paddingSection bg-black py-24 md:py-32 flex flex-col items-start justify-start font-inter text-white" id="services">
       <div className="max-w-7xl mx-auto px-4 md:px-8 w-full flex-grow flex flex-col">
         
         {/* Heading Section */}
         <div
           ref={headingRef}
-          className="mb-16 md:mb-24"
+          className="serviceHeading mb-16 md:mb-24"
           style={{
             opacity: headingInView ? 1 : 0,
             transform: headingInView ? "translateY(0)" : "translateY(20px)",
@@ -103,7 +103,7 @@ export default function Services() {
           }}
         >
           <h3 
-            className="text-[12px] md:text-[14px] tracking-[0.4em] uppercase mb-4 md:mb-6 font-medium"
+            className="text-[12px] serviceHeading md:text-[14px] tracking-[0.4em] uppercase mb-4 md:mb-6 font-medium"
             style={{ color: "#ff6f00" }} // Use the light green color from the image
           >
             S E R V I C E S

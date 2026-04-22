@@ -57,6 +57,7 @@ const App = () => {
 
 
     // Repeat some slides to ensure the slider has enough content for looping
+    
 
     { type: 'image', url: 'https://cdn.dribbble.com/userupload/44044558/file/original-7193447fbf98db6e7332fba05b76c9b5.png?resize=1600x1077&vertical=center' },
 

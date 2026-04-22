@@ -93,16 +93,16 @@ export default function FounderSection() {
           {/* Body paragraphs */}
           <div className="space-y-5 mb-10">
             <p className="text-[16px] w-72 text-[#b3b3b3] leading-relaxed max-w-sm">
-              I've spent the past 10 years designing products for startups around
-              the world — but I started as a founder. After building two startups
-              and making every mistake possible, I learned one thing the hard way:
-              design isn't decoration. It's leverage.
+             I’ve spent the last decade designing products for startups worldwide,
+              but my foundation is as a founder. After building two startups—and learning 
+              through every mistake firsthand—I came to a clear conclusion: design isn’t 
+              decoration, it’s leverage.
             </p>
             <p className="text-[16px] w-72 text-[#b3b3b3] leading-relaxed max-w-sm">
-              Today, I run a one-man design studio — no account managers, no
-              layers, no wasted hours. Just strategy, product design, UI, and
-              motion built to drive revenue, retention, and real results for
-              ambitious teams.
+              Today, I run a one-person design studio. No intermediaries, no 
+              unnecessary layers—just focused execution across strategy, 
+              product design, UI, and motion. Everything is built to drive revenue, 
+              improve retention, and deliver measurable results for ambitious teams.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export default function FounderSection() {
               Connect with me on
             </span>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/figmauiuxdesigner/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center justify-center w-10 h-10 rounded-full border border-white/30 hover:border-white/60 transition-colors duration-200"
