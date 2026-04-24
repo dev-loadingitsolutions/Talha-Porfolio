@@ -12,6 +12,7 @@ import TestimonialsSection from './components/TestimonialsSection'
 import BuiltByMe from './components/BuiltByMe'
 import PricingSection from './components/PricingSection'
 import FAQSection from './components/FAQSection'
+import CompareSection from './components/CompareSection'
 import CTASection from './components/CTASection'
 import ImagesSection from './components/ImagesSection'
 import CaseStudiesSection from './components/CaseStudiesSection'
@@ -106,11 +107,7 @@ const App = () => {
 
               <PricingSection />
               <FAQSection />
-
-
-
-
-
+              <CompareSection />
             </div>
 
             <TestimonialsSection />
