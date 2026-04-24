@@ -23,7 +23,7 @@ const cases = [
     logo: "https://www.qmb.ai/assets/Logo.svg",
     image: QMB,
     title: "QualiVerse® is the first AI-native Regulatory Intelligence Engine built for FDA success…",
-    tags: ["RevOps", "Business", "SaaS"],
+    tags: ["AI-Powered", "Data-Driven", "SaaS"],
     stats: [
       { value: "20M", label: "Secured funding" },
       { value: "90%", label: "Demo success rate" },
@@ -35,8 +35,8 @@ const cases = [
     logoAlt: "PerchPeek",
     logo: "https://cdn.prod.website-files.com/613f1f98b47b90f0bd65b024/655465f8756013d49a8017ff_perchpeek%20logo%20-%20Copy.png",
     image: PerchPeek,
-    title: "AI-powered crypto trading app for mobile and web.",
-    tags: ["Mobile", "iPad", "Web"],
+    title: "Tech-enhanced relocations at a fraction of traditional prices",
+    tags: ["Global Mobility", "Tech-Enabled", "Cost-Efficient"],
     stats: [
       { value: "39k", label: "Average rating" },
       { value: "4.8", label: "Store rating" },
@@ -45,11 +45,11 @@ const cases = [
   },
   {
     id: 4,
-    logoAlt: "Elumity",
+    logoAlt: "RLS remote",
     logo: "https://i0.wp.com/remotelegalstaff.com/wp-content/uploads/2022/06/black.png?w=1591&ssl=1",
     image: LegalRemote,
-    title: "Elumity — AI-powered knowledge management platform.",
-    tags: ["AI", "B2B", "Mobile App"],
+    title: "Hire Remote Legal Staff from $12/hour",
+    tags: ["Legal Staffing", "Remote Teams", "Cost-Effective"],
     stats: [
       { value: "39k", label: "Average rating" },
       { value: "4.8", label: "Store rating" },
