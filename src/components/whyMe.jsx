@@ -7,7 +7,7 @@ const WhyMe = () => {
     <section id='why-us' className='WhyMeMobile' style={{ 
       backgroundColor: '#fff', 
       padding: '180px 0px 120px', 
-       fontfamily: "'Suisse Intl regular', sans-serif",
+       fontfamily: "'Suisse Intl semi-bold', sans-serif",
       color: '#000', 
       display: 'flex',
       flexDirection: 'column',
@@ -25,10 +25,11 @@ const WhyMe = () => {
       </p>
 
       {/* Main Large Heading */}
-      <h2 style={{ 
+      <h2 className='leading-tight' style={{ 
         fontSize: 'clamp(32px, 5vw, 56px)', 
-        lineHeight: '1.1', 
-        fontWeight: '600', 
+        lineHeight: '1.1',
+        fontfamily: "'Suisse Intl semi-bold', sans-serif", 
+        fontWeight: '500', 
         maxWidth: '900px',
         marginBottom: '60px'
       }}>

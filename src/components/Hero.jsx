@@ -11,7 +11,7 @@ const Hero = () => {
                 <p className="mb-4 text-[16px] font-[400] text-susi font-medium text-[#0006]">
                     I’m Talha — founder of LOITS, designer, and growth partner
                 </p>
-                <h1 className="text-black text-susi max-w-[938px] font-bold leading-tight text-4xl sm:text-5xl lg:text-6xl">
+                <h1 className="text-black  max-w-[938px] font-medium leading-tight text-4xl sm:text-5xl lg:text-6xl">
                     Helping startups grow revenue with world-class  {" "}
 
                     <span className="inline-flex items-center middleImage align-middle mx-2">
