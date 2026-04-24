@@ -1,13 +1,16 @@
 import { useState } from "react";
+import QMB from "../assets/images/mockup-image.png";
+import PerchPeek from "../assets/images/perchpeek-mockup.png";
+import LegalRemote from "../assets/images/remote-legal.png";
 
 const cases = [
   {
     id: 1,
-    logoAlt: "Squire",
-    logo: "https://cdn.prod.website-files.com/690b2fc60f8d48c21bdd95d2/69298a2c7402e36d8bfd6999_Logo.svg",
-    image: "https://cdn.prod.website-files.com/690b2fc60f8d48c21bdd95d2/692d7b2672d97c7ec1d005eb_Frame%201533208472.png",
-    title: "Revamping Squire's onboarding experience that boosted signups by over 40%.",
-    tags: ["Barbershops", "Tech", "Business"],
+    logoAlt: "GTM funds",
+    logo: "https://cdn.prod.website-files.com/63dc90c4fffbf53ddbbf2480/6408aa6f3210b37c9a4a14b3_GTM%20Logo.png",
+    image: "https://cdn.dribbble.com/userupload/43990664/file/original-8f354f4bf121d1421b69fb6db62518ee.png?resize=752x&vertical=center",
+    title: "A founder-led design studio helping startups ship faster and scale smarter.",
+    tags: ["Founder-Led", "Product Design", "Revenue-Focused"],
     stats: [
       { value: "39k", label: "Average rating" },
       { value: "4.8", label: "Store rating" },
@@ -16,10 +19,10 @@ const cases = [
   },
   {
     id: 2,
-    logoAlt: "Nue",
-    logo: "https://cdn.prod.website-files.com/690b2fc60f8d48c21bdd95d2/69298a1cee07d378c1ba1f51_nue-logo.svg",
-    image: "https://cdn.prod.website-files.com/690b2fc60f8d48c21bdd95d2/692d7b1825755ff1ec68befa_Nue.png",
-    title: "Taking Nue.io into a $20 million series A funding.",
+    logoAlt: "QMB",
+    logo: "https://www.qmb.ai/assets/Logo.svg",
+    image: QMB,
+    title: "QualiVerse® is the first AI-native Regulatory Intelligence Engine built for FDA success…",
     tags: ["RevOps", "Business", "SaaS"],
     stats: [
       { value: "20M", label: "Secured funding" },
@@ -29,9 +32,9 @@ const cases = [
   },
   {
     id: 3,
-    logoAlt: "Crypto App",
-    logo: "https://cdn.prod.website-files.com/690b2fc60f8d48c21bdd95d2/692989e60650ed64d6cf1b01_Frame%201533208998.svg",
-    image: "https://cdn.prod.website-files.com/690b2fc60f8d48c21bdd95d2/692d7afc2c4ae14ea33b54ba_Frame%201533208648.png",
+    logoAlt: "PerchPeek",
+    logo: "https://cdn.prod.website-files.com/613f1f98b47b90f0bd65b024/655465f8756013d49a8017ff_perchpeek%20logo%20-%20Copy.png",
+    image: PerchPeek,
     title: "AI-powered crypto trading app for mobile and web.",
     tags: ["Mobile", "iPad", "Web"],
     stats: [
@@ -43,8 +46,8 @@ const cases = [
   {
     id: 4,
     logoAlt: "Elumity",
-    logo: "https://cdn.prod.website-files.com/690b2fc60f8d48c21bdd95d2/69298a04cd0dde6c753869d6_Frame%201533208997.svg",
-    image: "https://cdn.prod.website-files.com/690b2fc60f8d48c21bdd95d2/692d7b09cfdd31192f5e1e3d_Elumity.png",
+    logo: "https://i0.wp.com/remotelegalstaff.com/wp-content/uploads/2022/06/black.png?w=1591&ssl=1",
+    image: LegalRemote,
     title: "Elumity — AI-powered knowledge management platform.",
     tags: ["AI", "B2B", "Mobile App"],
     stats: [
@@ -68,6 +71,8 @@ function ArrowIcon() {
 
 function CaseCard({ item, sectionHovered }) {
   const [hovered, setHovered] = useState(false);
+
+  console.log('item.image:', item.image);
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -99,7 +104,8 @@ function CaseCard({ item, sectionHovered }) {
             transition: "transform 0.6s ease",
             transform: hovered ? "scale(1.05)" : "scale(1)",
           }}
-          onError={(e) => { e.target.style.display = "none"; }}
+          onLoad={() => console.log('Image loaded:', item.image)}
+          onError={(e) => { console.log('Image failed to load:', item.image, e); e.target.style.display = "none"; }}
         />
 
         {/* Gradient overlay */}
@@ -120,7 +126,7 @@ function CaseCard({ item, sectionHovered }) {
             position: "absolute",
             top: 18,
             left: 18,
-            background: "rgba(255,255,255,0.95)",
+            background: "rgba(51, 50, 50, 0)",
             borderRadius: 10,
             padding: "7px 14px",
             display: "flex",
