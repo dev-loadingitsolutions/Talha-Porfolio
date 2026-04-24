@@ -44,7 +44,7 @@ export default function CompareSection() {
   return (
     <section
       style={{
-        fontFamily: "'DM Sans', 'Helvetica Neue', sans-serif",
+        fontfamily: "'Suisse Intl regular', sans-serif",
         background: "#fff",
         minHeight: "100vh",
         padding: "72px 48px 96px",
@@ -148,7 +148,7 @@ export default function CompareSection() {
         }
         .col-grid {
           display: grid;
-          grid-template-columns: 120px 1fr 1fr 1fr;
+          grid-template-columns: 0 1fr 1fr 1fr;
           gap: 0;
           align-items: end;
           margin-bottom: 0;
