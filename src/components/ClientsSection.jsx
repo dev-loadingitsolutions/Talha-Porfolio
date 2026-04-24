@@ -38,7 +38,7 @@ const clients = [
       <img className="font-[12px] h-8 w-[80%]" src={GtMFound} alt="Gtm-Found Logo" />
       
     ),
-    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
+    description: "Product and platform design for a venture network empowering go-to-market leaders to invest in and scale the next generation of SaaS companies.",
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={tarty} alt="7arty Logo" />
       
     ),
-    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
+    description: "Mobile experience design for a content-driven platform built to help users create, explore, and engage with digital media in a seamless way.",
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={Quilverse} alt="7arty Logo" />
       
     ),
-    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
+    description: "AI-powered product and platform design for a regulatory intelligence system enabling MedTech teams to accelerate FDA submissions, reduce risk, and bring products to market faster.",
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={PerchPeek} alt="7arty Logo" />
       
     ),
-    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
+    description: "End-to-end product design for a global mobility platform helping companies manage employee relocations seamlessly with automation, coaching, and real-time tracking.",
   },
   {
     id: 6,
@@ -74,7 +74,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={QMB} alt="7arty Logo" />
       
     ),
-    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
+    description: "Design and experience strategy for an AI-driven regulatory platform transforming compliance into a strategic advantage for MedTech innovators worldwide.",
   },
   {
     id: 7,
@@ -83,7 +83,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={RLS} alt="7arty Logo" />
       
     ),
-    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
+    description: "Service platform design for a remote staffing solution enabling law firms to scale operations with pre-trained legal professionals and streamlined workflows.",
   },
   {
     id: 8,
@@ -92,7 +92,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={AlchemyBreath} alt="7arty Logo" />
       
     ),
-    description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
+    description: "Digital experience design for a global wellness platform helping individuals unlock emotional awareness and personal transformation through guided breathwork practices.",
   },
   
 ];
