@@ -273,7 +273,7 @@ export default function TestimonialsSection() {
         }}
       >
         {/* ── Header ── */}
-        <div className="Section SectionMobile" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 52 }}>
+        <div className="Section SectionMobile" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 52 }}>
           <div>
             <div className="headMobile" style={{ fontSize: 14, letterSpacing: "0.8em", color: "#080808", textTransform: "uppercase", marginBottom: 14, fontWeight: 500 }}>
               Testimonials
@@ -299,7 +299,7 @@ export default function TestimonialsSection() {
                   onClick={() => goTo(current + dir)}
                   disabled={disabled}
                   style={{
-                    width: 46, height: 46, borderRadius: "50%",
+                    width: 56, height: 56, borderRadius: "50%",
                     border: "1.5px solid #c8c8c0", background: "transparent",
                     display: "flex", alignItems: "center", justifyContent: "center",
                     opacity: disabled ? 0.28 : 1, transition: "opacity 0.2s, background 0.2s",
