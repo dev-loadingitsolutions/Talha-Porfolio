@@ -48,7 +48,7 @@ export default function CompareSection() {
         background: "#fff",
         minHeight: "100vh",
         padding: "72px 48px 96px",
-        maxWidth: 1100,
+        maxWidth: 1210,
         margin: "0 auto",
       }}
     >
@@ -74,7 +74,7 @@ export default function CompareSection() {
           padding-bottom: 20px;
         }
         .bar-wrap {
-          border-radius: 10px;
+          border-radius:  10px 10px 0px 0px;
           overflow: hidden;
           position: relative;
           height: 220px;
@@ -83,12 +83,12 @@ export default function CompareSection() {
         }
         .bar-inner {
           width: 100%;
-          border-radius: 10px;
+          border-radius:  10px 10px 0px 0px;
           transition: height 1.1s cubic-bezier(.22,1,.36,1);
         }
         .price-block {
           padding: 18px 20px 14px;
-          border-radius: 10px;
+          border-radius: 0px 0px 10px 10px;
         }
         .price-val {
           font-family: 'Suisse Intl regular';
@@ -159,12 +159,12 @@ export default function CompareSection() {
           overflow: hidden;
         }
         .lime-block {
-          background: #c8f000;
-          border-radius: 10px;
+          background: #ff6f00;
+          
         }
         .gray-block {
           background: #e8e8e8;
-          border-radius: 10px;
+          
         }
       `}</style>
 
@@ -175,9 +175,9 @@ export default function CompareSection() {
       >
         <p
           style={{
-            fontSize: 11,
-            letterSpacing: "0.18em",
-            color: "#aaa",
+            fontSize: 14,
+            letterSpacing: "0.58em",
+            color: "#141414",
             textTransform: "uppercase",
             marginBottom: 14,
             fontWeight: 500,
@@ -187,7 +187,7 @@ export default function CompareSection() {
         </p>
         <h2
           style={{
-            fontFamily: "'Suisse Intl semi-bold', Georgia, serif",
+            fontFamily: "'Suisse Intl semi-bold',  serif",
             fontSize: "clamp(36px, 5vw, 54px)",
             fontWeight: 400,
             lineHeight: 1.1,
@@ -246,11 +246,11 @@ export default function CompareSection() {
               style={{ height: visible ? "85%" : "0%" }}
             />
           </div>
-          <div className="price-block gray-block" style={{ marginTop: 4 }}>
+          <div className="price-block gray-block " style={{ marginTop: 0 }}>
             <div className="price-val" style={{ color: "#111" }}>
               $120–$160K
             </div>
-            <div className="price-sub" style={{ color: "#555" }}>
+            <div className="price-sub" style={{ color: "#a3a3a3" }}>
               Year + equity
             </div>
           </div>
@@ -264,11 +264,11 @@ export default function CompareSection() {
               style={{ height: visible ? "58%" : "0%" }}
             />
           </div>
-          <div className="price-block gray-block" style={{ marginTop: 4 }}>
+          <div className="price-block gray-block" style={{ marginTop: 0 }}>
             <div className="price-val" style={{ color: "#111" }}>
               $15–$30K
             </div>
-            <div className="price-sub" style={{ color: "#555" }}>
+            <div className="price-sub" style={{ color: "#a3a3a3" }}>
               Monthly
             </div>
           </div>
@@ -282,11 +282,11 @@ export default function CompareSection() {
               style={{ height: visible ? "28%" : "0%", transitionDelay: "0.3s" }}
             />
           </div>
-          <div className="price-block lime-block" style={{ marginTop: 4 }}>
-            <div className="price-val" style={{ color: "#111" }}>
+          <div className="price-block lime-block" style={{ marginTop: 0 }}>
+            <div className="price-val" style={{ color: "#ffffff" }}>
               $4–$6K
             </div>
-            <div className="price-sub" style={{ color: "#333" }}>
+            <div className="price-sub" style={{ color: "#ffffff" }}>
               Direct, focused, founder-led.
             </div>
           </div>
