@@ -35,7 +35,7 @@ const clients = [
     id: 2,
     name: <img className="font-[14px] w-[60%]" src={GtMFoundWhite} alt="GtM Logo" />,
     logo: (
-      <img className="font-[12px] h-10 w-[60%]" src={GtMFound} alt="Gtm-Found Logo" />
+      <img className="font-[12px] h-8 w-[80%]" src={GtMFound} alt="Gtm-Found Logo" />
       
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
@@ -170,10 +170,10 @@ function ClientCard({ client, index }) {
 
 export default function ClientsSection() {
   return (
-    <section className="ClientMobile" style={{ padding: "180px 0rem 180px", margin: "0 auto" }}>
+    <section className="ClientMobile" style={{ padding: "80px 0rem 80px", margin: "0 auto" }}>
       <p
         style={{
-          fontSize: 12,
+          fontSize: 14,
           letterSpacing: "0.25em",
           color: "#222222",
           textTransform: "uppercase",

@@ -247,7 +247,7 @@ const WhyMe = () => {
 
         {/* ── Small Top Heading ── */}
         <p style={{
-          fontSize: '12px',
+          fontSize: '14px',
           letterSpacing: '4px',
           fontWeight: '500',
           marginBottom: '20px',

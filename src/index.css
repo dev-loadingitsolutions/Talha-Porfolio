@@ -131,8 +131,8 @@ body {
 .hover-underline {
   position: relative;
   text-decoration: none;
-  
-  font-size: 20px;
+  font-family: 'Suisse Intl regular', sans-serif;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -193,11 +193,11 @@ body {
 .animated-btn {
   position: relative;
   overflow: hidden;
-  padding: 16px 40px;
+  padding: 16px 30px;
   border: 2px solid var(--primary);
   background: black;
   color: var(--primary);
-  font-size: 1.125rem;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.05em;
   cursor: pointer;

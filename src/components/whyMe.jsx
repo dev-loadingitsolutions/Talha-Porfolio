@@ -6,13 +6,16 @@ const WhyMe = () => {
   return (
     <section id='why-us' className='WhyMeMobile' style={{ 
       backgroundColor: '#fff', 
-      padding: '200px 0px', 
-      fontFamily: ' Inter, sans-serif',
-      color: '#000' 
+      padding: '180px 0px 120px', 
+       fontfamily: "'Suisse Intl regular', sans-serif",
+      color: '#000', 
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '60px',
     }}>
       {/* Small Top Heading */}
       <p style={{ 
-        fontSize: '12px', 
+        fontSize: '14px', 
         letterSpacing: '4px', 
         fontWeight: '500', 
         marginBottom: '20px',
