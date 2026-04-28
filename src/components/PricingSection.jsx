@@ -132,7 +132,7 @@ export default function PricingSection() {
       style={{
         background: "#fff",
         padding: "160px px 80px",
-        
+        fontfamily: 'Suisse Intl semi-bold',
         minHeight: "100vh",
       }}
     >
