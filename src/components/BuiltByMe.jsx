@@ -180,7 +180,7 @@ function SkipMiddlemenCard() {
         <div style={{ width: 1, height: 120, borderLeft: '2px dashed #bbb', margin: '8px 0' }} />
         <div style={{ width: 14, height: 14, borderRadius: '50%', background: '#111' }} />
       </div>
-      <p style={{ fontSize: 28, fontWeight: 700, color: '#111', margin: 0, textAlign: 'center' }}>
+      <p className='tracking-tight' style={{ fontSize: 28,  color: '#111', margin: 0, textAlign: 'center' }}>
         Skip middlemen
       </p>
     </div>
@@ -188,36 +188,52 @@ function SkipMiddlemenCard() {
 }
 
 // ── Senior Work Card ──────────────────────────────────────────────────────────
-function SeniorWorkCard() {
+ function SeniorWorkCard() {
   return (
-    <div style={{
-      background: '#f2f2f2', padding: '36px',
-      display: 'flex', flexDirection: 'column',
-      justifyContent: 'space-between', minHeight: 320,
-    }}>
-      <h3 style={{ fontSize: 28, fontWeight: 500, color: '#111', margin: '0 0 32px', lineHeight: 1.3 }}>
-        Senior-level work.<br />No agency markup
-      </h3>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 10, flex: 1, justifyContent: 'flex-end' }}>
-        <div style={{
-          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          background: '#111', borderRadius: 40, padding: '10px 20px',
-        }}>
-          <span style={{ fontSize: 14, fontWeight: 600, color: '#fff' }}>My subscription</span>
-          <span style={{ fontSize: 14, fontWeight: 600, color: '#FF6F00' }}>$</span>
-        </div>
-        <div style={{
-          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-          background: '#e8e8e2', borderRadius: 40, padding: '10px 20px',
-        }}>
-          <span style={{ fontSize: 14, fontWeight: 500, color: '#555' }}>Agency</span>
-          <span style={{ fontSize: 14, fontWeight: 600, color: '#555' }}>$$$</span>
-        </div>
+    <div className="bg-[#f2f2f2] w-full  min-h-[420px] p-8 flex flex-col relative overflow-hidden">
+
+      {/* Top Row: Heading + Green circle (partially cropped top-right) */}
+      <div className="flex justify-between items-start">
+        <h2 className="text-[28px] font-normal text-[#111111] leading-tight tracking-tight">
+          Senior-level work.<br />No agency markup
+        </h2>
+
+        {/* Green circle — partially cut off like in screenshot */}
+        
       </div>
-      <div style={{ textAlign: 'right', marginTop: 24 }}>
-        <p style={{ fontSize: 11, color: '#aaa', margin: 0 }}>Up to</p>
-        <p style={{ fontSize: 52, fontWeight: 700, color: '#111', margin: 0, lineHeight: 1 }}>5x</p>
-        <p style={{ fontSize: 12, color: '#888', margin: 0 }}>Lower average price</p>
+
+      {/* Push pills to bottom */}
+      <div className="flex-1" />
+
+      {/* Comparison Pills */}
+      <div className='flex w-full justify-between items-end'>
+        <div className="flex flex-col gap-[10px] w-[70%]">
+          {/* My subscription - dark pill */}
+          <div className="flex items-center justify-between bg-[#111111] w-[210px] rounded-full px-[20px] py-[12px]">
+            <span className="text-white text-[14px] font-semibold">My subscription</span>
+            <span className="text-[#ff6f00] text-[14px] font-bold">$</span>
+          </div>
+
+          {/* Agency - light pill */}
+          <div className="flex items-center w-[100%] justify-between bg-[#e6e6e6] rounded-full px-[20px] py-[12px]">
+            <span className="text-[#777] text-[14px] font-normal">Agency</span>
+            <span className="text-[#777] text-[14px] font-semibold">$$$</span>
+          </div>
+        </div>
+
+        {/* 5x stat — bottom right */}
+        <div className="flex justify-end mt-5">
+          <div className="text-right">
+            <p className="text-[11px] text-[#aaa] leading-none mb-1">Up to</p>
+            <p
+              className="text-[#111111] leading-none"
+              style={{ fontSize: 144, fontWeight: 100, letterSpacing: "-2px" }}
+            >
+              5x
+            </p>
+            <p className="text-[12px] text-[#888] leading-none mt-1">Lower average price</p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -471,3 +471,17 @@ body {
   padding: 40px 0px !important;
 }
 }
+
+
+.tracking-tight{
+  font-size: 28px;
+  font-family: 'Suisse Intl normal', sans-serif;
+}
+
+.PricingHead{
+  font-size: 40px;
+  font-family: 'Suisse Intl semi-bold', sans-serif;
+}
+.leading-none{
+  font-family:'Suisse Intl light', sans-serif;
+}
