@@ -10,7 +10,33 @@ const Signature = () => {
 
   return (
     <div className="mt-4" style={{ display: "inline-block" }}>
-      
+
+     <svg
+      viewBox="0 0 400 100"
+      className="w-72"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <text
+        x="10"
+        y="70"
+        fontSize="56"
+        fontFamily="cursive"
+        textalign="center"
+        fill="transparent"
+        stroke="white"
+        strokeWidth="0.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        style={{
+          strokeDasharray: 200,
+          strokeDashoffset: start ? 0 : 200,
+          transition: "stroke-dashoffset 3s ease-in-out",
+        }}
+      >
+        Talha Farooqi
+      </text>
+    </svg>
+
       <svg
       viewBox="0 0 320 80"
       fill="none"
@@ -33,6 +59,7 @@ const Signature = () => {
             transition: "stroke-dashoffset 2.5s ease-in-out",
           }}
       />
+      
       <path
         d="M8 62 C40 60, 100 58, 160 60 C210 61, 260 59, 310 62"
         stroke="white"
