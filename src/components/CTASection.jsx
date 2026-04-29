@@ -30,7 +30,7 @@ const CTASection = () => {
                             />
                             
                         </div>
-                        <span className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-lime-400 ring-2 ring-black" />
+                        <span className="absolute bottom-2 right-2 w-[10px] h-[10px] rounded-full bg-lime-400 ring-2 ring-black" />
                         
                     </div>
 
