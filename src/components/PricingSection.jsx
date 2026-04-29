@@ -312,7 +312,7 @@ export default function PricingSection() {
 
           {/* CTA */}
           
-          <div style={{ display: "flex", justifyContent: "flex-start", marginTop: 36 }}>
+          <div className="CTAButton" style={{ display: "flex", justifyContent: "flex-end", marginTop: 36 }}>
             <BookAnimatedButton />
             
           </div>
@@ -365,7 +365,7 @@ export default function PricingSection() {
           </div>
 
           {/* CTA */}
-          <div style={{ display: "flex", justifyContent: "flex-start", marginTop: 36 }}>
+          <div className="CTAButton" style={{ display: "flex", justifyContent: "flex-end", marginTop: 36 }}>
             <BuyAnimatedButton />
             
           </div>

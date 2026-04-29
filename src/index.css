@@ -472,6 +472,9 @@ body {
 .PricingMobile{
   padding: 40px 15px !important;
 }
+.CTAButton{
+  justify-content: flex-start !important;
+}
 .PricingHead{
   font-size: 32px !important;
   font-family: 'Suisse Intl normal', sans-serif !important;
