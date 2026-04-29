@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import TalhaFrooqi from "../assets/talhafrooqi.svg";
+import SignatureNew from "../assets/common/SignatureNew";
 
 function useInView(threshold = 0.15) {
   const ref = useRef(null);
@@ -125,15 +126,13 @@ export default function FounderSection() {
           </div>
 
           {/* Signature */}
-          <div className="mt-12">
-            <Signature />
-          </div>
+          
         </div>
 
         {/* ── RIGHT: Photo placeholder ── */}
         <div
           ref={imageRef}
-          className="relative flex items-center h-full justify-center"
+          className="relative flex flex-col gap-8 items-center h-full justify-center"
           style={{
             opacity: imageInView ? 1 : 0,
             transform: imageInView ? "translateX(0)" : "translateX(40px)",
@@ -151,6 +150,7 @@ export default function FounderSection() {
           */}
           
             <img className="w-full max-w-md object-cover" src={TalhaFrooqi} alt="talha" />
+            <SignatureNew />
          
 
           {/* Subtle vignette overlay to match the photo style */}
@@ -161,7 +161,9 @@ export default function FounderSection() {
                 "radial-gradient(ellipse 80% 80% at 50% 50%, transparent 40%, rgba(0,0,0,0.6) 100%)",
             }}
           />
+          
         </div>
+        
       </div>
     </section>
   );
