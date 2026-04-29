@@ -5,7 +5,7 @@ html {
 :root {
   --primary-blue: #2563eb;
   --primary-blue-rgb: 37, 99, 235;
-  --text-color: #0D0D0D;
+  --text-color: #ffffff;
   --bg-dark-1: #07111f;
   --bg-dark-2: #0f172a;
   --bg-dark-3: #020617;
@@ -115,6 +115,12 @@ body {
 
 
 /* animated Button css */
+
+
+
+
+
+
 /* From Uiverse.io by KINGFRESS */ 
 
 
@@ -241,10 +247,83 @@ body {
 }
 
 .animated-btn:hover {
-  background: black;
+  background: rgb(0, 0, 0);
   color: var(--primary-foreground);
   transition: background 0.4s ease 0.2s, color 0.4s ease 0.2s;
 }
+/*  second button  */
+.animated-btn2 {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 30px;
+  border: 2px solid var(--primary);
+  background: var(--_color---b5f900);
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 50px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 52px;
+}
+.animated-btn2:hover .animated-btn__text:not(.animated-btn__text--clone) .animated-btn__letter {
+  transform: translateY(100%);
+  opacity: 0;
+}
+.animated-btn2:hover .animated-btn__text--clone .animated-btn__letter {
+  transform: translateY(0);
+  opacity: 1;
+}
+.animated-btn2:hover {
+  background: var(--_color---b5f900);
+  color: var(--text-color);
+  transition: background 0.4s ease 0.2s, color 0.4s ease 0.2s;
+}
+
+
+/* Third button  */
+.animated-btn3 {
+  position: relative;
+  overflow: hidden;
+  padding: 16px 30px;
+  border: 2px solid var(--primary);
+  background: black;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 50px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  height: 52px;
+}
+
+.animated-btn3:hover .animated-btn__text:not(.animated-btn__text--clone) .animated-btn__letter {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.animated-btn3:hover .animated-btn__text--clone .animated-btn__letter {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animated-btn3:hover {
+  background: rgb(0, 0, 0);
+  color: var(--text-color);
+  transition: background 0.4s ease 0.2s, color 0.4s ease 0.2s;
+}
+
+
+
+
+
+
 
 /* Resposive Design Css Code Start  */
 
@@ -276,8 +355,9 @@ body {
   margin-top: 30px;
 }
 .leading-tight{
-  font-size: 37px;
-  font-family: 'Suisse Intl normal', sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: 'Suisse Intl semi-bold', sans-serif;
 }
 .middleImage{
   display: none;
@@ -289,8 +369,11 @@ body {
 }
 
 .WhyMeMobile{
-  
-  padding: 20px 15px !important;
+  gap: 20px !important;
+  padding: 40px 15px !important;
+}
+.SectionCount {
+  gap: 20px !important;
 }
 .SectionCount .count-text{
   font-size: 40px;
@@ -303,13 +386,38 @@ body {
 .ClientMobile{
   padding: 40px 20px 40px !important;
 }
-
+.fynderMobile{
+  width: 80%;
+  height: 3.2rem;
+}
 .clientBrand{
   display: grid;
   grid-template-columns: repeat(2, 1fr) !important;
   gap: 20px;
 
 
+}
+.comparePill{
+  flex-direction: column-reverse !important;
+  gap: 20px !important;
+  align-items: flex-start !important;  
+
+}
+.subBar{
+  width: 100% !important;
+}
+.leading-none{
+  font-weight: 100 !important;
+  
+}
+.fontLead{
+  font-size: 80px !important;
+  font-weight: 100 !important;
+  align-items: self-start;
+  display: flex;
+}
+.mainStat{
+  justify-content: flex-start !important;
 }
 .hoverInfo{
   padding: 15px !important;
@@ -381,7 +489,7 @@ body {
 }
 .OngoingPadd
 {
-  padding: 20px !important;
+  padding: 36px !important;
 }
 .cardHeadDir{
   flex-direction: column-reverse !important;

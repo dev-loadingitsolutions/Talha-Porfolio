@@ -89,7 +89,7 @@ export default function Services() {
   const [listRef, listInView] = useInView(0.15);
 
   return (
-    <section className="min-h-screen paddingSection bg-black py-24 md:py-32 flex flex-col items-start justify-start font-inter text-white" id="services">
+    <section className=" paddingSection bg-black py-24 md:py-32 flex flex-col items-start justify-start font-inter text-white" id="services">
       <div className="max-w-7xl mx-auto px-4 md:px-8 w-full flex-grow flex flex-col">
         
         {/* Heading Section */}
@@ -114,7 +114,7 @@ export default function Services() {
         {/* Services List Section */}
         <div 
           ref={listRef}
-          className="flex-grow flex flex-col justify-center space-y-10 md:space-y-12"
+          className="flex-grow flex flex-col justify-center "
         >
           {services.map((service, index) => (
             <ServiceItem
@@ -125,6 +125,7 @@ export default function Services() {
             />
           ))}
         </div>
+
 
       </div>
     </section>

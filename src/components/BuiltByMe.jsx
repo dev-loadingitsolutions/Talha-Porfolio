@@ -206,8 +206,8 @@ function SkipMiddlemenCard() {
       <div className="flex-1" />
 
       {/* Comparison Pills */}
-      <div className='flex w-full justify-between items-end'>
-        <div className="flex flex-col gap-[10px] w-[70%]">
+      <div className='comparePill flex w-full justify-between items-end'>
+        <div className="subBar flex flex-col gap-[10px] w-[70%]">
           {/* My subscription - dark pill */}
           <div className="flex items-center justify-between bg-[#111111] w-[210px] rounded-full px-[20px] py-[12px]">
             <span className="text-white text-[14px] font-semibold">My subscription</span>
@@ -222,16 +222,16 @@ function SkipMiddlemenCard() {
         </div>
 
         {/* 5x stat — bottom right */}
-        <div className="flex justify-end mt-5">
+        <div className="flex mainStat justify-end mt-5">
           <div className="text-right">
-            <p className="text-[11px] text-[#aaa] leading-none mb-1">Up to</p>
+            <p className="text-[14px] text-[#0d0d0d] text-left leading-none mb-1">Up to</p>
             <p
-              className="text-[#111111] leading-none"
+              className="text-[#111111] fontLead leading-none"
               style={{ fontSize: 144, fontWeight: 100, letterSpacing: "-2px" }}
             >
               5x
             </p>
-            <p className="text-[12px] text-[#888] leading-none mt-1">Lower average price</p>
+            <p className="text-[14px] text-[#0d0d0d] leading-none mt-1">Lower average price</p>
           </div>
         </div>
       </div>

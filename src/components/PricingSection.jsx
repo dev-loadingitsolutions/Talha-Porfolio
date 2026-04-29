@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BookAnimatedButton, BuyAnimatedButton } from "../assets/common/ButtonAnimated";
 
 // ── Icons ────────────────────────────────────────────────────────────────────
 const CheckIcon = ({ color = "#FF6F00" }) => (
@@ -168,7 +169,7 @@ export default function PricingSection() {
             fontWeight: 700,
             color: "#b3b3b3",
             lineHeight: 1.08,
-            margin: 0,
+            margin: "0 0 30px",
           }}
         >
           No surprises
@@ -310,22 +311,10 @@ export default function PricingSection() {
           </div>
 
           {/* CTA */}
-          <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 36 }}>
-            <button
-              style={{
-                background: "#FF6F00",
-                color: "#fff",
-                border: "none",
-                borderRadius: 40,
-                padding: "14px 28px",
-                fontSize: 16,
-                fontWeight: 400,
-                cursor: "pointer",
-                letterSpacing: "0.01em",
-              }}
-            >
-              Book a call
-            </button>
+          
+          <div style={{ display: "flex", justifyContent: "flex-start", marginTop: 36 }}>
+            <BookAnimatedButton />
+            
           </div>
         </div>
 
@@ -376,21 +365,9 @@ export default function PricingSection() {
           </div>
 
           {/* CTA */}
-          <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 36 }}>
-            <button
-              style={{
-                background: "#111",
-                color: "#fff",
-                border: "none",
-                borderRadius: 40,
-                padding: "14px 28px",
-                fontSize: 14,
-                fontWeight: 700,
-                cursor: "pointer",
-              }}
-            >
-              Buy now
-            </button>
+          <div style={{ display: "flex", justifyContent: "flex-start", marginTop: 36 }}>
+            <BuyAnimatedButton />
+            
           </div>
         </div>
       </div>

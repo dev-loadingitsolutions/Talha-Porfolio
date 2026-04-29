@@ -26,7 +26,7 @@ const clients = [
     id: 1,
     name: <img className="font-[12px] w-[60%]" src={FynderWhite} alt="FynderWhite Logo" />,
     logo: (
-      <img className="font-[12px] h-16 w-[100%]" src={Fynder} alt="Fynder Logo" />
+      <img className="fynderMobile font-[12px] h-16 w-[100%]" src={Fynder} alt="Fynder Logo" />
       
     ),
     description: "End-to-end mobile product design for a category-defining barbershop platform serving tens of thousands of professionals globally.",
@@ -56,7 +56,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={Quilverse} alt="7arty Logo" />
       
     ),
-    description: "AI-powered product and platform design for a regulatory intelligence system enabling MedTech teams to accelerate FDA submissions, reduce risk, and bring products to market faster.",
+    description: "AI-powered design for a regulatory intelligence platform helping MedTech teams speed up FDA submissions, reduce risk, and launch faster.",
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={PerchPeek} alt="7arty Logo" />
       
     ),
-    description: "End-to-end product design for a global mobility platform helping companies manage employee relocations seamlessly with automation, coaching, and real-time tracking.",
+    description: "End-to-end product design for a global mobility platform simplifying employee relocations with automation, coaching, and real-time tracking.",
   },
   {
     id: 6,
@@ -92,7 +92,7 @@ const clients = [
       <img className="font-[12px] h-12 w-[80%]" src={AlchemyBreath} alt="7arty Logo" />
       
     ),
-    description: "Digital experience design for a global wellness platform helping individuals unlock emotional awareness and personal transformation through guided breathwork practices.",
+    description: "Digital experience design for a global wellness platform enabling emotional awareness and personal growth through guided breathwork.",
   },
   
 ];
