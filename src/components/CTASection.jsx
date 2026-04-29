@@ -28,9 +28,9 @@ const CTASection = () => {
                                 alt="Profile"
                                 className="w-full h-full object-cover"
                             />
-                            <span className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-lime-400 ring-2 ring-black" />
+                            
                         </div>
-
+                        <span className="absolute bottom-2 right-2 w-4 h-4 rounded-full bg-lime-400 ring-2 ring-black" />
                         
                     </div>
 
