@@ -19,6 +19,8 @@ import CaseStudiesSection from './components/CaseStudiesSection'
 import ServiceItem from './components/Services'
 import Footer from './components/Footer'
 import RecentWorks from "./RecentWorks";
+import EducationCertifications from "./components/EducationCertifications";
+import CertificationsEducation from "./components/CertificationsEducation";
 
 
 
@@ -106,9 +108,13 @@ const App = () => {
               <BuiltByMe />
 
               <PricingSection />
+              
               <FAQSection />
+              
               <CompareSection />
             </div>
+            <EducationCertifications />
+            <CertificationsEducation />
 
             <TestimonialsSection />
             <div className="Section">

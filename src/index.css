@@ -403,6 +403,9 @@ body {
   align-items: flex-start !important;  
 
 }
+.CompareDisplay{
+  display: none !important;
+}
 .subBar{
   width: 100% !important;
 }

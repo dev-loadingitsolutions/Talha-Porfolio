@@ -42,7 +42,7 @@ export default function CompareSection() {
   }, []);
 
   return (
-    <section
+    <section className="CompareDisplay"
       style={{
         fontfamily: "'Suisse Intl regular', sans-serif",
         background: "#fff",
@@ -69,12 +69,12 @@ export default function CompareSection() {
           font-size: 14px;
           font-family: 'Suisse Intl regular';
           font-weight: 400;
-          color: #888;
+          color: #1a1a1a;
           letter-spacing: 0.01em;
           padding-bottom: 20px;
         }
         .bar-wrap {
-          border-radius:  10px 10px 0px 0px;
+          background: #f7f7f7 !important;
           overflow: hidden;
           position: relative;
           height: 220px;
@@ -83,12 +83,12 @@ export default function CompareSection() {
         }
         .bar-inner {
           width: 100%;
-          border-radius:  10px 10px 0px 0px;
+          
           transition: height 1.1s cubic-bezier(.22,1,.36,1);
         }
         .price-block {
           padding: 18px 20px 14px;
-          border-radius: 0px 0px 10px 10px;
+          
         }
         .price-val {
           font-family: 'Suisse Intl regular';
@@ -239,7 +239,7 @@ export default function CompareSection() {
         <div />
 
         {/* In-house */}
-        <div style={{ padding: "0 8px 0 0" }}>
+        <div className="rounded-[0px]" style={{ padding: "0 8px 0 0" }}>
           <div className="bar-wrap" style={{ background: "#f2f2f2" }}>
             <div
               className="bar-inner gray-block"
