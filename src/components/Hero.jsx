@@ -6,7 +6,7 @@ import Clutch from '../assets/clutch-rating.svg'
 
 const Hero = () => {
     return (
-        <section className="py-20 HeroSection text-white">
+        <section className="py-20 HeroSection text-white" id= "home">
             <div className="mt-20 HeroInner">
                 <p className="mb-4 text-[16px] font-[400] text-susi font-medium text-[#0006]">
                     I’m Talha — founder of LOITS, designer, and growth partner
