@@ -29,7 +29,7 @@ const services = [
     description: "Building unique and memorable brand identities.",
   },
   {
-    title: "WEBSITES",
+    title: "WEB DEVELOPMENT",
     number: "17",
     description: "Designing and developing responsive, conversion-focused websites.",
   },
@@ -39,7 +39,7 @@ const services = [
     description: "Creating user-centric native and cross-platform app experiences.",
   },
   {
-    title: "PRODUCT DESIGN",
+    title: "SAAS DEVELOPMENT",
     number: "21",
     description: "Crafting end-to-end digital product designs from concepts.",
   },

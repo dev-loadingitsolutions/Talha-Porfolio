@@ -20,7 +20,7 @@ import ServiceItem from './components/Services'
 import Footer from './components/Footer'
 import RecentWorks from "./RecentWorks";
 import EducationCertifications from "./components/EducationCertifications";
-import CertificationsEducation from "./components/CertificationsEducation";
+
 
 
 
@@ -114,7 +114,7 @@ const App = () => {
               <CompareSection />
             </div>
             <EducationCertifications />
-            <CertificationsEducation />
+            
 
             <TestimonialsSection />
             <div className="Section">
